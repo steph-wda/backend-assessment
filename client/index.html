@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get a cookie fortune</button>
+
+    <p> Sharpen your skills with programming and computer trivia questions!</p>
+    <form id="trivia">
+      <label for="numberOfQuestions">Number Of Questions:</label>
+      <input type="number" name="numberOfQuestions" id="numberOfQuestions" min="1" max="5">
+      <label for="difficulty">Select difficulty:</label>
+      <select name="difficulty" id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <input type="submit" id="triviaSubmit">
+    
+    </form>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
