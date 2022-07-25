@@ -22,19 +22,21 @@ const getFortune = () => {
     });
 };
 
-// const getTrivia = () => {
-//     let amount = document.getElementById('numberOfQuestions')
-//     console.log(amount)
-//     let difficulty = document.getElementById('difficulty')
-    // axios.get(`https://opentdb.com/api.php?amount=${amount}&category=18&difficulty=${difficulty}&type=boolean`)
-    // .then(res => {
-    //     const data = res.data;
-    //     alert(data);
-    // })
-//};
+
+const getTrivia = (e) => {
+    e.preventDefault()
+    let amount = document.getElementById('numberOfQuestions').value
+    let difficulty = document.getElementById('difficulty').value
+    axios.get(`https://opentdb.com/api.php?amount=${amount}&category=18&difficulty=${difficulty}&type=boolean`)
+    .then(res => {
+        const data = res.data.results; //gets the results from the response
+        
+    
+    })
+};
 
 
 
 complimentBtn.addEventListener('click', getCompliment)
 fortuneBtn.addEventListener('click', getFortune)
-// triviaBtn.addEventListener('click', getTrivia)
+triviaBtn.addEventListener('click', getTrivia)
