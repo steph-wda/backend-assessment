@@ -9,8 +9,6 @@
 
     <p> Sharpen your skills with programming and computer trivia questions!</p>
     <form id="trivia">
-      <label for="numberOfQuestions">Number Of Questions:</label>
-      <input type="number" name="numberOfQuestions" id="numberOfQuestions" min="1" max="5">
       <label for="difficulty">Select difficulty:</label>
       <select name="difficulty" id="difficulty">
         <option value="easy">Easy</option>
@@ -21,7 +19,8 @@
     
     </form>
 
-    <div id="triviaCard"></div>
+    <div id="triviaCard">
+    </div>
     <div id="studyCards"></div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

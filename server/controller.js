@@ -1,3 +1,7 @@
+let studyCards =[]
+let id = 1;
+
+
 module.exports = {
   getCompliment: (req, res) => {
     const compliments = [
